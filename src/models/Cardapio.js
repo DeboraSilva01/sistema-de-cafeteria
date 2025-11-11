@@ -7,7 +7,8 @@ const PRODUCTS = [
   { id: 2, name: 'Cappuccino', category: 'Café', priceCents: 700 },
   { id: 3, name: 'Pão de Queijo', category: 'Salgado', priceCents: 300 },
   { id: 4, name: 'Bolo de Chocolate', category: 'Sobremesa', priceCents: 650 },
-  { id: 5, name: 'Suco Natural', category: 'Bebida', priceCents: 625 }
+  { id: 5, name: 'Suco Natural', category: 'Bebida', priceCents: 625 },
+  { id: 6, name: 'Teste', category: 'Bebida', priceCents: 1050 }
 ];
 
 export default class Cardapio {
