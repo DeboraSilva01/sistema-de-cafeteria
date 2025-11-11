@@ -137,3 +137,30 @@ th,td{padding:12px;text-align:left;border-bottom:1px dashed #eee;font-size:15px}
 .pay-option { display:flex;align-items:center;gap:8px;font-weight:700;color:var(--text); }
 #cashReceived { border-radius:8px;padding:8px;border:1px solid rgba(0,0,0,0.06) }
 #changeInfo { font-weight:700;color:var(--prim); }
+
+@media print {
+  body * {
+    visibility: hidden; /* oculta tudo */
+  }
+
+  .receipt, .receipt * {
+    visibility: visible; /* mostra apenas o recibo */
+  }
+
+  .receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* remove fundo escuro do overlay */
+  .overlay {
+    background: none !important;
+  }
+
+  /* evita que apareçam botões de fechar/imprimir */
+  .no-print {
+    display: none !important;
+  }
+}
